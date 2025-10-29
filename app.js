@@ -1,6 +1,8 @@
 const sequelize = require('./config/database');
 const Establishment = require('./models/Establishment');
 const User = require('./models/User');
+const Professional = require('./models/Professional');
+const Service = require('./models/Service');
 
 sequelize.sync({ alter: true })
   .then(() => {
